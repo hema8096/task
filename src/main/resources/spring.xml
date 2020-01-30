@@ -6,23 +6,14 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+<bean class="com.xworkz.hema.ThreadIMPL" id="threadIMPL">
+</bean>
 
-	<bean class="com.xworkz.hema.Fuel" id="fuel">
-	<constructor-arg value="4"/>
-	</bean>
-	
-	<bean class="com.xworkz.hema.Satellite" id="sat">
-	<property name="location" value="goa"/>
-	<property name="Launch" value="10"/>
-	
-	</bean>
-	
-	<bean class ="com.xworkz.hema.Rocket" id="Rocket ">
-	<constructor-arg ref="fuel"/>
-	<property name="Sat" ref="sat"/>
-	<property name="countryName" value="10"/>
-	
-	</bean>
+<bean class="com.xworkz.hema.labour" id="labour">
+<constructor-arg  value="varam"/>
+<property name="experence" value="678"></property>
+<property name="threadIMPL" ref="threadIMPL"></property>
+</bean>
 
 
 </beans>
